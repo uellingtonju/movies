@@ -3,7 +3,7 @@ import "./Footer.css"
 function Footer() {
     return(
         <footer className="footer">
-            <h2>MaiaFlix © Desenvolvido por Edson Maia 2023</h2>
+            <h2>LinkFlix © Desenvolvido por Uellington Junior 2023</h2>
         </footer>
     )
 }

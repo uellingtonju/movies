@@ -3,7 +3,7 @@ import "./Header.css"
 function Header() {
     return (
         <header className="topo">
-            <span>MaiaFlix</span>
+            <span>LinkFlix</span>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Assistir</a>
