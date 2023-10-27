@@ -24,9 +24,11 @@ function App() {
     <Header />
     <Banner image="home" />
     <Container>
-        <Category category="Geografia">
-        { filterCategory(0).map((video) => <Card id={video.id} key={video.id}/>) }
-        </Category>
+        {
+          categories.map((category, index) => <Category category={category}>
+          { filterCategory(index).map((video) => <Card id={video.id} key={video.id}/>) }
+          </Category>)
+        }
     </Container>
     <Footer/>
    </div>
