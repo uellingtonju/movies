@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
 import "./Header.css"
 
 function Header() {
     return (
         <header className="topo">
-            <span>LinkFlix</span>
+            <Link to="/">
+                <span>LinkFlix</span>
+            </Link>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Assistir</a>
+               <Link to="/">Home</Link>
+
+               <Link to="/watch">Assistir</Link>
             </nav>
         </header>
     )
