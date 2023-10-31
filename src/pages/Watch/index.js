@@ -1,6 +1,8 @@
-import Container from "../../components/Container";
-import Footer from "../../components/Footer/Index";
+
+
+import Container from "../../components/container"
 import Header from "../../components/Header";
+import Footer from "../../components/Footer/Index";
 import "./Watch.css"
 
 function Watch() {

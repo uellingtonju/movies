@@ -5,7 +5,7 @@ import Card from "../../components/Card";
 import Category, {categories, filterCategory} from "../../components/Category";
 import Footer from "../../components/Footer/Index";
 import Header from "../../components/Header";
-import Container from "../../components/Container";
+import Container from "../../components/container";
 
 
 

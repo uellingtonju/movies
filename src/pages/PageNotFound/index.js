@@ -7,7 +7,7 @@ function PageNotFound(){
     return (
         <div>
             < Header />
-            <section className="Container">
+            <section className="errado">
                 <h2>Ops! Conteúdo não localizado!</h2>
                 <img src={erro404} alt="Logo de Pagína não localizada"/>
             </section>
