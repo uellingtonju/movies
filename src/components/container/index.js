@@ -1,14 +1,7 @@
-
-import './Container.css'
+import "./Container.css";
 
 function Container({ children }) {
-    return(
-        <section className='container'>
-            {children}
-        </section>
-
-    )
-
+  return <section className="over">{children}</section>;
 }
 
 export default Container;
