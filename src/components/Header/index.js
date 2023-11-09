@@ -1,21 +1,20 @@
 import { Link } from "react-router-dom";
-import "./Header.css"
+import "./Header.css";
 
 function Header() {
-    return (
-        <header className="topo">
-            <Link to="/">
-                <span>LinkFlix</span>
-            </Link>
-            <nav>
-               <Link to="/">Home</Link>
+  return (
+    <header className="topo">
+      <Link to="/">
+        <span>LinkFlix</span>
+      </Link>
+      <nav>
+        <Link to="/">Home</Link>
 
-               <Link to="/watch">Assistir</Link>
-               <Link to="/seach">Pesquisar</Link>
-
-            </nav>
-        </header>
-    )
+        <Link to="/seach">Pesquisar</Link>
+        <Link to="/favorites">Favoritos</Link>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;
