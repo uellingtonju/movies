@@ -1,20 +1,25 @@
 import { Link } from "react-router-dom";
-import Favorite from "./favorite.png";
-import unFavorite from "./unfavorite.png";
 import "./card.css";
+import iconFavorite from "./favorite.png"; /* branco */
+import iconUnfavorite from "./unfavorite.png"; /* vermelho */
+import { useFavoriteContext } from "../contexts/Favorites";
 
 function Card({ id }) {
+  const { favorite, addFavorite } = useFavoriteContext();
+  const isFavorite = favorite.some((fav) => fav.id === id);
+  const icone = !isFavorite ? iconFavorite : iconUnfavorite;
+
   return (
     <section className="card">
       <Link to={`/watch/${id}`}>
         <img
           src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
-          alt="capa"
+          alt="Capa"
           className="capa"
         />
       </Link>
       <figure className="icone">
-        <img src={Favorite} alt="capa" />
+        <img src={icone} alt="Ícone" onClick={() => addFavorite({ id })} />
       </figure>
     </section>
   );
