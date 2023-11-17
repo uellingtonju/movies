@@ -5,6 +5,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Seach from "./pages/seach";
 import Favorites from "./pages/Favore";
 import FavoritesProvider from "./components/contexts/Favorites";
+import VideoCadastre from "./pages/VideoCadastre";
 
 function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ function AppRoutes() {
           <Route path="/watch/:id" element={<Watch />}></Route>
           <Route path="/seach" element={<Seach />}></Route>
           <Route path="/favorites" element={<Favorites />}></Route>
+          <Route path="/cadastre" element={<VideoCadastre />}></Route>
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
       </FavoritesProvider>
