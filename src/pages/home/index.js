@@ -7,11 +7,13 @@ import Category, {
 } from "../../components/Category";
 import Footer from "../../components/Footer/Index";
 import Header from "../../components/Header";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 import Container from "../../components/container";
 
 function Home() {
   return (
     <div>
+      <ScrollToTopButton />
       <Header />
       <Banner image="home" />
       <Container>
